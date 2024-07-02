@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { useQuery, gql } from "@apollo/client";
 
 type TGetLocations = {
@@ -8,6 +7,7 @@ type TGetLocations = {
   description: string;
   photo: string;
 };
+
 const GET_LOCATIONS = gql`
   query GetLocations {
     locations {
